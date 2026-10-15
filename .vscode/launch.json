@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug (DAP-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/MDK-ARM/Structure/Structure.axf",
+            "serverpath": "C:/Desktop_Backup/xpack-openocd-0.12.0-7/bin/openocd.exe",
+            "gdbPath": "C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-gdb.exe",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "openOCDLaunchCommands": [
+                "adapter speed 1000"
+            ],
+            "runToEntryPoint": "main"
+        }
+    ]
+}
